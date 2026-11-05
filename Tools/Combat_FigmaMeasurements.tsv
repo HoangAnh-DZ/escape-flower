@@ -1,0 +1,145 @@
+id	name	x	y	w	h	fontSize
+2-30	environment background	-236	0	874	874	
+2-31	boat	197	195	193.983	156	
+2-32	panel_rec_lightgreen	12	463	311	411	
+2-33	Rectangle 70	20	471	295	100	
+2-34	icon_flag finish	335	65	14	19.065	
+2-35	image 39	0	778	402	96	
+2-36	Group 1	22	577	291.863	192.216	
+2-60	Level 12			142	24	18
+2-61	Gear 10	26.7	574	48	48	
+2-62	Gear 12	215	666	48	48	
+2-63	Gear 4	168	619	48	48	
+2-64	2			14	24	28
+2-65	Gear 9	25	619	48	48	
+2-66	Gear 8	74.6	574	48	48	
+2-67	8			14	24	28
+2-68	4			14	24	28
+2-69	1			14	24	28
+2-70	4			14	24	28
+2-71	Gear 2	170	665	48	48	
+2-72	2			14	24	28
+2-73	Mob1_Flying	73	132	36	25	
+2-74	Mob1_Flying	152	147	36	25	
+2-75	Mob1_Melee	120	353	29	32	
+2-76	Mob1_Melee	20	352	29	32	
+2-77	Mob1_Melee	170	258	29	32	
+2-78	Mob1_Melee	72	344	29	32	
+2-79	Mob1_Melee	151	309	29	32	
+2-80	Mob1_Range	32	392	43	35.332	
+2-81	Mob1_Range	109	229	43	35.332	
+2-82	Mob1_Range	173	276	43	35.332	
+2-83	Rectangle 71	6	111	76	28	
+2-84	Rectangle 72	30	476	136	22	
+2-85	Rectangle 73	171	476	137	22	
+2-86	Rectangle 74	360	390	53	22	
+2-87	Rectangle 77	360	362	53	22	
+2-88	Rectangle 78	360	334	53	22	
+2-89	Rectangle 79	360	306	53	22	
+2-90	char nerd	281	267	27	39.153	
+2-91	char emo	308	226	23.762	35.558	
+2-92	char tomboy	338	232	29.144	42.78	
+2-93	165			38	24	18
+2-94	73.3			62	19	14
+2-95	icon_sun	10	109	32	32.417	
+2-96	Gear - Weapon	170	712	48	48	
+2-97	Gear - Weapon	216	578	48	48	
+2-98	Gear 11	215	621	48	48	
+2-99	1			14	24	28
+2-100	Mob1_Fast	169	339	47	44.238	
+2-101	Gear - Stats	26	667	48	48	
+2-102	Gear Rotor	56	611	58	58	
+2-103	Slot gear - Active	30	503	42	60	
+2-104	Slot gear - Active	78	503	42	60	
+2-105	Slot gear - Disabled	171	503	42	60	
+2-106	Slot gear - Disabled	218	503	42	60	
+2-107	Slot gear - Empty	124	503	42	60	
+2-108	Slot gear - Empty	265	503	42	60	
+2-109	boat wheel	32	512	40	40	
+2-110	0.24/s			65	24	10
+2-111	boat sail	269	511	36	43	
+2-112	button_booster	334	491	58	58	
+2-113	button_booster	334	564	58	58	
+2-114	button_booster	334	637	58	58	
+2-115	button_booster	334	710	58	58	
+2-116	icon_Booster_heart heal	346	503	36	36	
+2-117	dot_green	372	529	24	24	
+2-118	dot_green	372	675	24	24	
+2-119	dot_green	372	748	24	24	
+2-120	3			14	24	18
+2-121	3			14	24	18
+2-122	3			14	24	18
+2-123	dot_green	372	602	24	24	
+2-124	3			14	24	18
+2-125	Gear connected	270	549	32	32	
+2-126	Gear connected - highlighted	35	549	32	32	
+2-127	icon_move speed	39	479	17.647	15	
+2-128	icon_fire rate	178	479	20.8	16	
+2-129	image 55	184	296	135	125	
+2-130	Gun_berry_slot	124	511	42	42	
+2-131	Gun_pea_slot	78	511	42	42	
+2-132	1.17/s			65	24	10
+2-133	Gear connected	128	549	32	32	
+2-134	Gear connected - highlighted	83	549	32	32	
+2-135	slider gameplay_background	63	83	275	8	
+2-136	slider gameplay_fill_cyan	63	83	103	8	
+2-137	icon_skull	114	66	11	13	
+2-138	icon_skull	170	66	11	13	
+2-139	Polygon 1	117	80.3	5	7	
+2-140	Polygon 2	173	80.3	5	7	
+2-141	Group 19	288	66	11	21.3	
+2-144	distance pointer	143	86	44	20	
+2-145	123m			34	12	12
+2-146	slider gameplay_background	190	263	27	8	
+2-147	slider gameplay_background	165	245	27	8	
+2-148	slider gameplay_background	303	169	37	8	
+2-149	slider gameplay_background	157	135	27	8	
+2-150	slider gameplay_background	16	196	97	8	
+2-151	slider gameplay_fill_red	190	263	25	8	
+2-152	slider gameplay_fill_red	165	245	13	8	
+2-153	slider gameplay_fill_red	157	135	23	8	
+2-154	slider gameplay_fill_red	16	196	75	8	
+2-155	slider gameplay_fill_green	303	169	29	8	
+2-156	120			24	12	12
+2-157	Rectangle 75	128	500	34	14	
+2-158	Rectangle 76	82	500	34	14	
+2-159	Rectangle 80	174	117	54	16	
+2-160	+2			16	9	10
+2-161	52.3mph			62	19	12
+2-162	+1			16	9	10
+2-163	13			16	9	14
+2-164	0			16	9	14
+2-165	2			16	9	14
+2-166	5			16	9	14
+2-167	bullet_pea	86	501	12	12	
+2-168	bullet_pea	366	395	12	12	
+2-169	bullet_berry	131	501	12	12	
+2-170	bullet_berry	366	367	12	12	
+2-171	bullet_chili	366	338	12	12	
+2-172	bullet_pumpkin	366	311	12	12	
+2-173	Gear X1_5	120	713	48	48	
+2-174	X1_5	127	729	37	20	
+2-175	icon_status_poison	314	180	15.509	15.509	
+2-176	2			11	9	12
+2-177	icon_status_shield	313	142	16	16	
+2-178	89			24	12	12
+2-179	button_xspeed	366	109	32	32	
+2-180	x2			26	24	16
+2-181	char sexy	312	273	34	36.929	
+2-182	Hard			38	16	14
+2-183	arrow up	287	481	17	11	
+2-184	arrow up	144	483	17	11	
+2-185	Gear 1	121	621	48	48	
+2-186	1			14	24	28
+2-187	Group 25	368	72	26.153	26.153	
+2-195	Setting	14	71	25.304	28.153	
+2-205	Gear_frozen	120	714	48	48	
+2-206	Mask group	170	684	48	30	
+2-209	Stone phase 1	261	715	48	48	
+2-210	Gear_ad	215	667	48	48	
+2-211	Gear - Earning	25	713	48	48	
+2-212	Gear_spider	168	577	48	48	
+2-213	Peanut Drone 2	222	585	33.796	33.796	
+2-214	Flower Crit dmg	30	673	36	36	
+2-215	Flower Extra Gold	30	719	36	36	
+2-216	Boss1	-11	215	159.982	121.847	

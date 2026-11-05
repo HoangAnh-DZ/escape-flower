@@ -1,0 +1,12 @@
+{
+  "Combat": {
+    "mean_absolute_rgb_error_0_255": 4.3463338832828144,
+    "fraction_pixels_max_channel_error_at_most_16": 0.9175811175485042,
+    "note": "Rendering comparison, not a percentage of requirements completed."
+  },
+  "Gear": {
+    "mean_absolute_rgb_error_0_255": 3.869668367673202,
+    "fraction_pixels_max_channel_error_at_most_16": 0.916756193326427,
+    "note": "Rendering comparison, not a percentage of requirements completed."
+  }
+}
