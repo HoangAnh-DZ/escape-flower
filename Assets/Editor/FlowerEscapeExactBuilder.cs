@@ -41,7 +41,7 @@ public static class FlowerEscapeExactBuilder
         var cam=Camera.main;cam.clearFlags=CameraClearFlags.SolidColor;cam.backgroundColor=new Color32(12,104,141,255);
         var root=new GameObject("FlowerEscapeUI",typeof(RectTransform),typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));
         var canvas=root.GetComponent<Canvas>();canvas.renderMode=RenderMode.ScreenSpaceCamera;canvas.worldCamera=cam;canvas.planeDistance=1;canvas.pixelPerfect=true;
-        var scaler=root.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(402,778);scaler.matchWidthOrHeight=0;
+        var scaler=root.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(402,874);scaler.matchWidthOrHeight=0;
         var bg=Sprite(new Layer{id="2-30",name="environment background",path="Assets/Art/Figma/Combat/environment background.png",x=0,y=0,w=402,h=874},root.transform,0).rectTransform;
         bg.anchorMin=bg.anchorMax=bg.pivot=new Vector2(.5f,1);bg.anchoredPosition=Vector2.zero;
         var bleed=Rect("BottomSafeAreaBackground",root.transform,0);bleed.anchorMin=Vector2.zero;bleed.anchorMax=new Vector2(1,0);bleed.pivot=new Vector2(.5f,0);bleed.anchoredPosition=Vector2.zero;bleed.sizeDelta=Vector2.zero;bleed.gameObject.AddComponent<Image>().raycastTarget=false;
@@ -62,6 +62,7 @@ public static class FlowerEscapeExactBuilder
             var image=Sprite(l,l.y<145?gearHud:body,l.y<145?0:199);
             if(l.name=="button_big_cyan") { image.raycastTarget=true;start=image.gameObject.AddComponent<Button>();start.targetGraphic=image;start.transition=Selectable.Transition.None; }
         }
+        FlowerEscapeBannerBuilder.Build(safe);
         var controller=root.AddComponent<FlowerEscapeUiController>();var so=new SerializedObject(controller);
         so.FindProperty("gearRoot").objectReferenceValue=gear.gameObject;so.FindProperty("combatRoot").objectReferenceValue=combat.gameObject;so.FindProperty("startButton").objectReferenceValue=start;so.ApplyModifiedPropertiesWithoutUndo();
         var responsive=root.AddComponent<FlowerEscapeResponsive>();responsive.safeArea=safe;responsive.gearBody=body;responsive.combatBody=panel;responsive.battle=battle;responsive.hud=hud;responsive.gearHud=gearHud;responsive.bottomBleed=bleed;responsive.screenBackground=bg;
