@@ -23,6 +23,7 @@ public static class FlowerEscapeExactBuilder
         if(sprite==null) throw new Exception("Missing exported sprite: "+layer.path);
         var r=Rect(layer.id+" "+layer.name,parent,layer.h);
         r.sizeDelta=new Vector2(layer.w,layer.h);r.anchoredPosition=new Vector2(layer.x,-layer.y+originY);
+        CorrectGearPosition(r,layer.id,originY);
         var image=r.gameObject.AddComponent<Image>();image.sprite=sprite;image.raycastTarget=false;
         // PNG export bounds are already tight. Resizing to the Figma text box
         // would enlarge glyphs; the native 3x export dimensions are authoritative.
@@ -32,6 +33,36 @@ public static class FlowerEscapeExactBuilder
     {
         int n=int.Parse(id.Split('-')[1]);
         return n==34||n==60||n==83||n==93||n==95||(n>=135&&n<=145)||n==159||n==179||n==180||n==182||n==187||n==195;
+    }
+    static void CorrectGearPosition(RectTransform rect,string id,float originY)
+    {
+        // Align each overlay with its gear's cell; preserve native sprite sizes.
+        switch(id)
+        {
+            case "2-101": rect.anchoredPosition=new Vector2(26,originY-667);break;
+            case "2-71": rect.anchoredPosition=new Vector2(170,originY-666);break;
+            case "2-72": rect.anchoredPosition=new Vector2(170+(48-rect.sizeDelta.x)/2,originY-666-(48-rect.sizeDelta.y)/2);break;
+            case "2-62": rect.anchoredPosition=new Vector2(215,originY-666);break;
+            case "2-69": rect.anchoredPosition=new Vector2(215+(48-rect.sizeDelta.x)/2,originY-666-(48-rect.sizeDelta.y)/2);break;
+        }
+    }
+    [MenuItem("Flower Escape/Fix coin and gear alignment")]
+    public static void FixAlignment()
+    {
+        if(Application.isPlaying)throw new Exception("Stop Play Mode first");
+        var root=UnityEngine.Object.FindFirstObjectByType<FlowerEscapeResponsive>();
+        if(root==null)throw new Exception("Open FlowerEscape scene");
+        Undo.RegisterFullObjectHierarchyUndo(root.gameObject,"Fix coin and gear alignment");
+        foreach(RectTransform rect in root.combatBody)
+            CorrectGearPosition(rect,rect.name.Split(' ')[0],463);
+        var coin=root.safeArea.Find("AdvertisementBanner/CoinIllustration/CoinOuter") as RectTransform;
+        var face=root.safeArea.Find("AdvertisementBanner/CoinIllustration/CoinFace") as RectTransform;
+        if(coin==null||face==null)throw new Exception("Editable banner coin missing");
+        coin.sizeDelta=new Vector2(42,42);coin.anchoredPosition=new Vector2(21,-10);
+        face.sizeDelta=new Vector2(36,36);face.anchoredPosition=new Vector2(24,-13);
+        PrefabUtility.SaveAsPrefabAsset(root.gameObject,"Assets/Prefabs/UI/FlowerEscapeUI.prefab");
+        EditorSceneManager.MarkSceneDirty(root.gameObject.scene);
+        EditorSceneManager.SaveScene(root.gameObject.scene);AssetDatabase.SaveAssets();
     }
     [MenuItem("Flower Escape/Build measured Figma UI")]
     public static void Build()

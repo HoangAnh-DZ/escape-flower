@@ -40,8 +40,8 @@ public static class FlowerEscapeBannerBuilder
         Box("PedestalShadow",art,15,53,57,18,new Color32(12,19,30,255));
         Box("PedestalFront",art,20,48,48,20,new Color32(28,42,62,255));
         Box("PedestalTop",art,16,45,56,6,new Color32(55,75,98,255));
-        Shape("CoinOuter",art,26,10,32,42,new Color32(133,112,64,255),BannerShape.Shape.Ellipse);
-        Shape("CoinFace",art,29,12,26,37,new Color32(199,181,130,255),BannerShape.Shape.Ellipse);
+        Shape("CoinOuter",art,21,10,42,42,new Color32(133,112,64,255),BannerShape.Shape.Ellipse);
+        Shape("CoinFace",art,24,13,36,36,new Color32(199,181,130,255),BannerShape.Shape.Ellipse);
         Text("CoinCurrency",art,"$",34,15,24,34,25,new Color32(132,115,70,255),true);
         float[] xs={7,64,4,70},ys={29,9,48,37};
         for(int i=0;i<4;i++)

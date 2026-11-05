@@ -12,3 +12,10 @@ Current prefab: `Assets/Prefabs/UI/FlowerEscapeUI.prefab`.
 - Pixel identity is not achieved: the reconstructed vector illustration and font differ from the raster advertisement in Figma. The prior responsive arrangement and position-only corrections were superseded by the requested full-frame composition.
 
 Earlier `ExactLayout` captures/status reports describe historical revisions and are not evidence of this revision.
+
+## Coin and gear alignment correction
+
+- Coin outer/inner UI bounds are now square (42×42 and 36×36) with concentric centres, removing the tall oval distortion in both states.
+- Main's DMG base now aligns with its badge; frozen gear 2 is centred behind its ice overlay and label; video gear 1 is centred behind its video badge and label.
+- Sprite dimensions and all unrelated layout positions were preserved.
+- Both camera captures were regenerated after the correction; Unity Console returned no errors or warnings.
